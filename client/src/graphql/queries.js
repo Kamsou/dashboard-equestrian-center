@@ -1,4 +1,4 @@
-const url = 'http://localhost:4000/graphql'
+import { HOSTNAME } from '../config/keys'
 
 const getLessons = async (state) => {
 
@@ -22,12 +22,12 @@ const getLessons = async (state) => {
       }`
     })
   }
-  const response = await fetch(url, options)
+  const response = await fetch(HOSTNAME, options)
   const text = await response.text()
   const jsonRes = JSON.parse(text)
 
   state.isLoading = false
-  
+
   return jsonRes.data.lessons
 }
 
