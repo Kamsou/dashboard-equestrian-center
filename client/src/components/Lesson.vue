@@ -166,7 +166,7 @@ export default {
         </button>
       </div>
     </div>
-    <div>
+    <div v-if="state.lessonList.length !== 0">
       <h2 class="font-bold pl-2 md:pl-0">Tous les cours</h2>
       <div class="block p-4 mt-4 md:flex md:p-0">
         <article

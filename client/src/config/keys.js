@@ -1,1 +1,1 @@
-export const HOSTNAME = 'http://localhost:4000/graphql'
+export const HOSTNAME = 'https://dashboard-equestrian-center.herokuapp.com/graphql'
